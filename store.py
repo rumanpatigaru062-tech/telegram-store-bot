@@ -236,7 +236,7 @@ def my_orders(call):
 
 @bot.callback_query_handler(func=lambda call: call.data == "support_menu")
 def support_menu(call):
-    text = "ð¬ *SUPPORT & TICKETS*\n\nIf you have a faulty order or need admin assistance, open a ticket below.\n\nð¨âð» *Direct Admin Contact:* @markocpm"
+    text = "ð¬ *SUPPORT & TICKETS*\n\nIf you have a faulty order or need admin assistance, open a ticket below.\n\nð¨âð» *Direct Admin Contact:* @RSP_OWN3R"
     markup = types.InlineKeyboardMarkup(row_width=1)
     markup.add(
         types.InlineKeyboardButton("ð« Open a Ticket", callback_data="open_ticket"),
