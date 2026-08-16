@@ -97,7 +97,7 @@ def init_db():
     except sqlite3.OperationalError: pass
 
     default_cats = [
-        ("cpm1", "CPM 1 Accounts", "High quality CPM1 accounts with premium cars.", 500, 5.0, 450.0, "account"),
+        ("cpm3", "CPM 2 Accounts", "High quality CPM2 accounts with premium cars.", 500, 5.0, 450.0, "account"),
         ("cpm2_random", "CPM 2: Random Cars", "Accounts packed with random premium cars.", 600, 6.0, 500.0, "account"),
         ("cpm2_12k", "CPM 2: 12k Coins", "Accounts pre-loaded with 12,000 Coins.", 800, 8.0, 700.0, "account")
     ]
