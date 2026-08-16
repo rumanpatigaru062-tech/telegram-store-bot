@@ -259,7 +259,7 @@ def process_ticket(message):
     
     markup = types.InlineKeyboardMarkup()
     markup.add(types.InlineKeyboardButton("ð Back to Main Menu", callback_data="main_menu"))
-    bot.send_message(message.chat.id, "â *Ticket Submitted!* @markocpm will review it and contact you shortly.", parse_mode="Markdown", reply_markup=markup)
+    bot.send_message(message.chat.id, "â *Ticket Submitted!* @RSP_OWN3R will review it and contact you shortly.", parse_mode="Markdown", reply_markup=markup)
 
 # ---------------------------------------------------------------------------
 # CATALOG & SELECTION (GARAGE & DYNAMIC ACCOUNTS/SERVICES)
@@ -561,7 +561,7 @@ def process_payment_option(call):
     user_id = call.from_user.id
 
     if method == "stars":
-        bot.send_message(call.message.chat.id, f"â­ *Telegram Stars Payment*\n\nTo pay with Stars, please contact @markocpm directly with Item ID `#{escape_md(item_type.upper())}-{item_id}`.", parse_mode="Markdown")
+        bot.send_message(call.message.chat.id, f"â­ *Telegram Stars Payment*\n\nTo pay with Stars, please contact @RSP_OWN3R directly with Item ID `#{escape_md(item_type.upper())}-{item_id}`.", parse_mode="Markdown")
         return
 
     pay_name = "Binance Pay" if method == "binance" else "Google Pay"
